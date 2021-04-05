@@ -173,3 +173,171 @@
     display: inline-block;
     height: 70px;
 }
+/* -----------------------------END OF CATEGORY----------------- */
+/* ------------------------- ITEM_CONTAINER--------------------- */
+
+.item-container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    grid-gap: 10px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.item-container .item-1, .item-3{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.item-container .item-2,.item-4{
+    grid-column: span 2;
+}
+
+.item-container .item-1{
+    background: url("./img/container_1_item_1.jpg") no-repeat center center/cover;
+}
+.item-container .item-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #3D7D1F;
+}
+.item-container .item-2 .content{
+    width: 50%;
+    text-align: left;
+    padding-left: 25px;
+}
+.item-container .item-2 .content *{
+    padding: 10px;
+    color: #ffffff;
+}
+.item-container .item-2 .content h2{
+    font-size: 25px;
+}
+.item-container .item-2 .content p{
+    font-size: 18px;
+}
+.item-container .item-2 a{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+.item-container .item-2 a:hover{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+.item-container .item-2 a i{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: -5px;
+    margin-bottom: -10px;
+}
+
+.item-container .item-2 .image{
+    height: 100%;
+    width: 50%;
+    background: url("./img/container_1_item_2.jpg") no-repeat center center/cover;
+}
+
+.item-container .item-3{
+    background:url("./img/container_1_item_3.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.item-container .item-3 *{
+    padding: 15px;
+    text-align:left;
+}
+.item-container .item-3 h2{
+    font-size: 40px;
+}
+.item-container .item-3 p{
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+.item-container .item-3 a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.item-container .item-3 a i{
+    display: inline-block;
+    margin-left: -15px;
+    font-weight: bold;
+}
+.item-container .item-3 a:hover{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+.item-container .item-4{
+    display: flex;
+    flex-direction: row;
+    background-color: #3D7D1F;
+}
+.item-container .item-4 .image{
+    background: url("./img/container_1_item_4.jpg") no-repeat center center/cover;
+    width: 50%;
+}
+.item-container .item-4 .content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+}
+.item-container .item-4 .content *{
+    padding:10px;
+    color:#ffffffff;
+    text-align: left;
+}
+
+.item-container .item-4 .content h2{
+    font-size: 20px;
+}
+.item-container .item-4 .content p{
+    font-size: 15px;
+}
+.item-container .item-4 .content a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.item-container .content a i{
+    display: inline-block;
+    margin-left: -10px;
+}
+.item-container .content a:hover{
+    color: #94E241;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+/* .item-container .item-2, .item-3{
+    grid-column: span 2;
+    background-color: cornflowerblue;
+} */
+
+/* .item-container .item-1{
+    background: url("./img/container_1_item_1.jpg") no-repeat center center/cover;
+}
+
+.item-container .item-2{
+    background: url("./img/container_1_item_2.jpg") no-repeat center center/cover;
+}
+
+.item-container .item-3{
+    background: url("./img/container_1_item_4.jpg") no-repeat center center/cover;
+}
+
+.item-container .item-4{
+    background: url("./img/container_1_item_3.jpg") no-repeat center center/cover;
+} */
